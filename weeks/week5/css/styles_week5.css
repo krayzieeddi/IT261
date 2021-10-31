@@ -1,0 +1,52 @@
+/*  week 5 styles */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    background:beige;
+}
+form {
+    width:400px;
+    margin:30px auto;
+}
+label {
+    display:block;
+    margin-bottom:5px;
+}
+fieldset {
+    padding:8px;
+    border:1px solid red;
+}
+.box {
+    width:400px;
+    margin:10px auto;
+    border:2px solid green;
+    padding:8px;
+}
+form ul {
+    margin-left:10px;
+    margin-bottom:10px;
+    list-style-type:none;
+}
+input {
+    margin-bottom:10px;
+}
+input[type="radio"] {
+    margin-right:5px;
+}
+span {
+    display:block;
+}
+.error {
+    display:block;
+    color:red;
+    text-align:center;
+    font-size:1.4em;
+    margin-bottom:3px;
+}
+select {
+    display:block;
+    margin-bottom:10px;
+}

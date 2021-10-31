@@ -1,0 +1,88 @@
+/* styles for my portal page for IT 261 */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* BODY section ------------------------------------- */
+body {
+    background: lightgrey;
+}
+/* HEADER section ------------------------------------ */
+header {
+    overflow:hidden;
+    background: rgb(180, 172, 162);
+}
+#logo {
+    float:left;
+}
+.header-inner {
+    max-width:1100px;
+    margin:20px auto;
+}
+/* NAV section -------------------------- */
+nav {
+    height:50px;
+    float:right;
+}
+nav ul {
+    float:right;
+}
+nav li {
+    float:left;
+    list-style-type:none;
+    margin-left:30px;
+}
+nav a {
+    text-decoration:none;
+}
+/* main wrapper sections --------------------------- */
+#wrapper {
+    max-width: 1100px;
+    margin:20px auto;
+}
+/* values are based on a 940px grid  -- 580 divided by 940*/
+main {
+    width:61.70%;
+    /* background: lightblue; */
+    border:1px solid black;
+    float:left;
+    margin-bottom:20px;
+}
+aside {
+    width:31.17%;
+    float:right;
+    border:1px solid black;
+    /* background:lightcoral; */
+}
+aside li {
+    /* list-style-type:none; */
+    margin-left:30px;
+}
+footer {
+    height:50px;
+    line-height: 50px;
+    border-top:1px dotted #666;
+    background:rgb(180, 172, 162);
+    clear:both;
+}
+footer li {
+    float:left;
+    list-style-type: none;
+    margin-left:20px;
+}
+footer ul {
+    margin-right:20px;
+    float:right;
+}
+/* Other section --------  */
+img {
+    width:95%;
+    margin:10px;
+}
+p {
+    margin-top:5px;
+    margin-bottom:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
