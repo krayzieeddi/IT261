@@ -41,12 +41,13 @@
     }
 </style>
 
-<title>Basic price form</title>
+<title>calculator-days-error page</title>
 
 </head>
 
 <body> <!-- start of body //////////////////////// -->
 
+<h1>Our trip calculator</h1>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 
         <fieldset>

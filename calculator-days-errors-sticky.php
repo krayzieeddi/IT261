@@ -41,11 +41,13 @@
     }
 </style>
 
-<title>Basic price form</title>
+<title>calculator-days-error-sticky page</title>
 
 </head>
 
 <body> <!-- start of body //////////////////////// -->
+
+    <h1>Our trip calculator</h1>
 
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 
@@ -162,6 +164,12 @@
         } // end of server request
 
     ?>
+
+    <ul>
+        <li><a href="calculator.php">calculator.php</a></li>
+        <li><a href="calculator-days.php">calculator-days.php</a></li>
+        <li><a href="calculator-days-errors.php">calculator-days-errors.php.php</a></li>
+    </ul>
 
 </body>
 

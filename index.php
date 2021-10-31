@@ -21,7 +21,7 @@
                 <li> <a href="index.php">Home</a> </li>
                 <li> <a href="website/daily.php">Switch (HW3)</a> </li>
                 <li> <a href="adder.php">Troubleshooting (HW4)</a> </li>
-                <li> <a href="">Calculator (HW5)</a> </li>
+                <li> <a href="calculator-days-errors-sticky.php">Calculator (HW5)</a> </li>
                 <li> <a href="">Email</a> </li>
                 <li> <a href="">Database</a> </li>
             </ul>
