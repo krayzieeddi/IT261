@@ -146,6 +146,12 @@
 
     ?>
 
+    <ul>
+        <li><a href="calculator.php">calculator.php</a></li>
+        <li><a href="calculator-days.php">calculator-days.php</a></li>
+        <li><a href="calculator-days-errors-sticky.php">calculator-days-errors.php.php</a></li>
+    </ul>
+
 </body>
 
 </html>
