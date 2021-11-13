@@ -14,8 +14,6 @@ include('includes/header.php'); ?>
 
         <h2>Please fill out our form!</h2>
 
-        <?php include('includes/form.php'); ?>
-
         <!-- insert the form for HW here -->
     </main>
 

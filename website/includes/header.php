@@ -14,7 +14,7 @@
     <header> <!-- START of header section //////////// -->
         <div class="header-inner">
 
-        <a href="index.php"> <h1 id="logo">Logo</h1> </a> <!-- INSERT IMG HERE LATER -->
+        <h1 id="logo"><a href="index.php">Logo</a></h1> <!-- INSERT IMG HERE LATER -->
 
         <nav><!-- START of nav section //////////////////////// -->
             <ul>

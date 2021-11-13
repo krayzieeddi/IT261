@@ -56,7 +56,6 @@ nav a {
 /* values are based on a 940px grid  -- 580 divided by 940*/
 main {
     width:61.70%;
-    height:400px;
     background: lightblue;
     float:left;
     margin-bottom:20px;
