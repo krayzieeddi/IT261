@@ -8,12 +8,7 @@ include('includes/header.php'); ?>
     <main> <!-- START of main section //////// -->
         <h1><?php echo $headline; ?></h1>
 
-        <p>Thank for submitting your form</p>
-
+        <p>You have successfully submited your survey. Your complementary gift will arrive in 1 - 2 years. Probably... </p>
     </main>
-
-    <aside> <!-- START of aside section //////// -->
-        <h3>Our Aside for our form</h3>
-    </aside>
 
 <?php include('includes/footer.php'); ?>

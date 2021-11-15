@@ -12,6 +12,8 @@ $comments = '';
 $privacy = '';
 $phone = '';
 
+$thing = '';
+
 $first_name_Err = '';
 $last_name_Err = '';
 $gender_Err = '';
@@ -135,8 +137,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'Reply-to' => ''.$email.''
         );
 
-        mail($to, $subject, $body, $headers);
-        header('Locaton: thx.php');
+        // mail($to, $subject, $body, $headers);
+        
+        header('Location: thx.php');
     }
 
 } // end of server request 
@@ -281,6 +284,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         </fieldset> <!-- end of fieldset //////////////// -->
     </form>
+
 
 </body>
 </html>

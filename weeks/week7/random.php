@@ -37,13 +37,13 @@ $photos = array(
     'photo5'
 );
 
-$photos[0] = 'photo1';
-$photos[1] = 'photo2';
-$photos[2] = 'photo3';
-$photos[3] = 'photo4';
-$photos[4] = 'photo5';
+$photos[0] = 'pic1';
+$photos[1] = 'pic2';
+$photos[2] = 'pic3';
+$photos[3] = 'pic4';
+$photos[4] = 'pic5';
 
 $i = rand(0, 4);
-$selected_image = ''.$photos[$i].'.jpg'; 
+$selected_image = ''.$photos[$i].'.JPG'; 
 
 echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';

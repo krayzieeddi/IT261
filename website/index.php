@@ -6,7 +6,7 @@ include('includes/header.php'); ?>
    <div id="wrapper">
 
     <div id="hero">  <!-- START of hero div section //////// -->
-        <?php randomPic($selected_image, $i, $photos) ;?>
+    <?php randomPic($selected_image, $i, $photos) ;?>
 
         <h2><pre>
             <br>

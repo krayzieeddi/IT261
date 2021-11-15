@@ -78,16 +78,23 @@ switch(THIS_PAGE) {
         $headline = 'Welcome to our garllery page of our IT 261 website';
         break;  
 
+    case 'thx.php':
+        $title = 'thx page';
+        $body = 'thx inner';
+        $headline = 'Thank you for submitting your form';
+        break; 
+
 }
 
-$photos[0] = 'photo1';
-$photos[1] = 'photo2';
-$photos[2] = 'photo3';
-$photos[3] = 'photo4';
-$photos[4] = 'photo5';
+// ramdom pictures for website index page
+$photos[0] = 'pic1';
+$photos[1] = 'pic2';
+$photos[2] = 'pic3';
+$photos[3] = 'pic4';
+$photos[4] = 'pic5';
 
 $i = rand(0, 4);
-$selected_image = ''.$photos[$i].'.jpg'; 
+$selected_image = ''.$photos[$i].'.JPG'; 
 
 function randomPic($selected_image, $i, $photos) {
     echo '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
@@ -97,20 +104,18 @@ function randomPic($selected_image, $i, $photos) {
 
     $first_name = '';
     $last_name = '';
-    $gender = '';
     $email = '';
-    $wines = array(); 
-    $regions = '';
+    $cardSet = array(); 
+    $localStore = '';
     $comments = '';
     $privacy = '';
     $phone = '';
     
     $first_name_Err = '';
     $last_name_Err = '';
-    $gender_Err = '';
     $email_Err = '';
-    $wines_Err = ''; 
-    $regions_Err = '';
+    $cardSet_Err = ''; 
+    $localStore_Err = '';
     $comments_Err = '';
     $privacy_Err = '';
     $phone_Err = '';
@@ -129,14 +134,7 @@ function randomPic($selected_image, $i, $photos) {
         }
         else {
         $last_name = $_POST['last_name'];
-        }
-    
-        if (empty($_POST['gender'])) {
-            $gender_Err = 'Please check your Gender';
-        }
-        else {
-            $gender = $_POST['gender'];
-        }
+        }  
     
         if (empty($_POST['email'])) {
             $email_Err = 'Please fill out your Email';
@@ -145,18 +143,18 @@ function randomPic($selected_image, $i, $photos) {
             $email = $_POST['email'];
         }
     
-        if (empty($_POST['wines'])) {
-            $wines_Err = 'Please select your wines';
+        if (empty($_POST['cardSet'])) {
+            $cardSet_Err = 'Please select your card set';
         }
         else {
-            $wines = $_POST['regions'];
+            $cardSet = $_POST['localStore'];
         }
     
-        if ($_POST['regions'] == NULL) {
-            $regions_Err = 'Please select your region';
+        if ($_POST['localStore'] == NULL) {
+            $localStore_Err = 'Please select your local store';
         }
         else {
-            $regions = $_POST['regions'];
+            $localStore = $_POST['localStore'];
         }
     
         if (empty($_POST['comments'])) {
@@ -186,40 +184,37 @@ function randomPic($selected_image, $i, $photos) {
             }
         }
     
-        function myWines() {
-        // the logic is if post wines is NOT EMPTY, then, we need to 
-        // grab the wines and display the, just like we did our implode.php
+        function myCardSet() {
+        // the logic is if post cardSet is NOT EMPTY, then, we need to 
+        // grab the cardSet and display the, just like we did our implode.php
     
             $myReturn = '';
     
-            if (!empty($_POST['wines'])) {
-                $myReturn = implode(', ', $_POST['wines']);
+            if (!empty($_POST['cardSet'])) {
+                $myReturn = implode(', ', $_POST['cardSet']);
             }
     
             return $myReturn;
-        } // end of myWines function 
+        } // end of mycardSet function 
     
-        // email content section
+        // email content section ----------------------------------------
         if(isset($_POST['first_name'], 
                 $_POST['last_name'],
-                $_POST['gender'],
                 $_POST['email'],
-                $_POST['wines'],
-                $_POST['regions'],
+                $_POST['cardSet'],
+                $_POST['localStore'],
                 $_POST['comments'],
                 $_POST['privacy'],
                 $_POST['phone']
         )) {
-            $to = 'edwinh300@gmail.com';
+            $to = 'szemeo@mystudentswa.com';
             $subject = 'test email,'.date('m/d/y');
             $body = '
-            The first name is: '.$first_name.' '.PHP_EOL.'
-            The last name is: '.$last_name.' '.PHP_EOL.'
-            Gender: '.$gender.' '.PHP_EOL.'
+            Your name is: '.$first_name.' '.$last_name.' '.PHP_EOL.'
             Email: '.$email.' '.PHP_EOL.'
             Phone: '.$phone.' '.PHP_EOL.'
-            Region: '.$regions.' '.PHP_EOL.'
-            Wines: '.myWines().' '.PHP_EOL.'
+            Your local store: '.$localStore.' '.PHP_EOL.'
+            Your favorite card set: '.mycardSet().' '.PHP_EOL.'
             Comments: '.$comments.' '.PHP_EOL.'
             ';
     
@@ -228,8 +223,8 @@ function randomPic($selected_image, $i, $photos) {
                 'Reply-to' => ''.$email.''
             );
     
-            // mail($to, $subject, $body, $headers);
-            header('Locaton: thx.php');
+            mail($to, $subject, $body, $headers);
+            header('Location: thx.php');
         }
     
     } // end of server request 

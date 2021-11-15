@@ -20,7 +20,9 @@ include('includes/header.php'); ?>
     </main>
 
     <aside> <!-- START of aside section //////// -->
-        <h3>Our Aside for our form</h3>
+        <h3>Tell us your favorite Magic set</h3>
+
+        <img src="images/magicCards.jpg" alt="cards">
     </aside>
 
 <?php include('includes/footer.php'); ?>
