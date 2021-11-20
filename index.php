@@ -99,6 +99,11 @@
                     <li><a href="weeks/week7/strings.php">strings.php</a></li>
                     <li><a href="weeks/week7/pictures.php">pictures.php</a></li>
             </ul> 
+
+            <p>week 8</p>
+            <ul>
+                    <li><a href="weeks/week8/people.php">people.php</a></li>
+            </ul> 
         </aside>
 
         <footer> <!-- START footer section //////// -->
