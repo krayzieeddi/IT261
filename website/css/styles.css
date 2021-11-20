@@ -66,9 +66,19 @@ main li {
 main p {
     margin-top:10px;
     margin-left:10px;
+    margin-right:10px;
 }
 main ul {
     margin-top:20px;
+    margin-left:10px;
+}
+main img {
+    width:300px;
+}
+main table, td {
+    border: 1px black solid;
+}
+main td {
     margin-left:10px;
 }
 aside {
