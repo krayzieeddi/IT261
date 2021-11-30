@@ -1,5 +1,23 @@
 <?php
 
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+function myError($myFile, $myLine, $errorMsg) {
+
+    if(defined('DEBUG') && DEBUG) {
+        echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+        echo 'Error message: <b> '.$errorMsg.'</b>';
+        die();
+    }  
+    else {
+        echo ' Houston, we have a problem!';
+        die();
+    }
+}
+
 // this if else statement is to get the current day of the user
 if (isset($_GET['today'])) {
     $today = $_GET['today'];
@@ -51,7 +69,7 @@ switch(THIS_PAGE) {
     case 'about.php':
         $title = 'About page of our IT261 website';
         $body = 'about inner';
-        $headline = 'Welcome to our about page of our IT 261 website';
+        $headline = 'The screenshot of mysql table for the projects page';
         break;
 
     case 'daily.php':
@@ -72,10 +90,10 @@ switch(THIS_PAGE) {
         $headline = 'Welcome to our contact page of our IT 261 website';
         break;
 
-    case 'garllery.php':
+    case 'gallery.php':
         $title = 'gallery page of our IT261 website';
         $body = 'gallery inner';
-        $headline = 'Welcome to our garllery page of our IT 261 website';
+        $headline = 'Welcome to the sigmar gallery page';
         break;  
 
     case 'thx.php':
