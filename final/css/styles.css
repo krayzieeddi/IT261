@@ -1,0 +1,161 @@
+/* styles for website for IT 261 */
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+/* BODY section ------------------------------------- */
+body {
+    background: rgb(226, 226, 218);
+}
+.blue {
+    background-color:blue;
+}
+/* HEADER section ------------------------------------ */
+header {
+    overflow:hidden;
+    background: rgb(26, 26, 0);
+}
+#logo {
+    float:left;
+}
+.header-inner {
+    max-width:1100px;
+    margin:20px auto;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+/* NAV section -------------------------- */
+nav {
+    height:50px;
+    float:right;
+}
+nav ul {
+    float:right;
+    margin-right:20px;
+}
+nav li {
+    float:left;
+    list-style-type:none;
+    margin-left:30px;
+}
+nav a {
+    color:white;
+    text-decoration:none;
+}
+.current {
+    color:red;
+    font-weight:bold;
+}
+/* log out and success message */
+.success {
+    float:left;
+    padding:10px;
+    color:white;
+    border:1px solid brown;
+}
+.welcome-logout {
+    float:right;
+    padding:10px;
+    color:white;
+    border:1px solid brown;
+}
+/* main wrapper sections --------------------------- */
+#wrapper {
+    max-width: 1100px;
+    margin:20px auto;
+}
+#hero {
+    margin-bottom:20px;
+    background:rgb(0, 0, 0);
+}
+.manaDiv {
+    border:1px solid black;
+}
+.manaDiv p {
+    margin-left: 20px;
+}
+/* values are based on a 940px grid  -- 580 divided by 940*/
+main {
+    width:61.70%;
+    background: lightblue;
+    float:left;
+    margin-bottom:20px;
+}
+main li {
+    list-style-type: none;
+    margin-left: 5px;
+}
+main p {
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+}
+main ul {
+    margin-top:20px;
+    margin-left:10px;
+}
+main img {
+    width:300px;
+}
+main table, td {
+    border: 1px black solid;
+}
+main td {
+    margin-left:10px;
+}
+aside {
+    width:31.17%;
+    float:right;
+    height:300px;
+    /* background:lightcoral; */
+}
+aside img {
+    width:350px;
+}
+.mana {
+    width:200px;
+}
+footer {
+    height:50px;
+    line-height: 50px;
+    border-top:1px dotted #666;
+    clear:both;
+}
+footer li {
+    float:left;
+    list-style-type: none;
+    margin-left:20px;
+}
+footer ul {
+    float:right;
+}
+/* styles for form */
+
+/* form styles */
+form {
+    background: lightgrey;
+}
+label {
+    display:block;
+}
+fieldset {
+    padding:10px;
+}
+.error {
+    display:block;
+    color:red;
+    margin-bottom:10px;
+    margin-top:5px;
+    font-style:italic;
+}
+#hero img {
+    height:300px;
+}
+.big {
+    width:100%;
+}
